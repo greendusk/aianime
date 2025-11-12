@@ -7,341 +7,88 @@
 <meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
 <title>A Very (very) Pathetic Web Page</title>
 </head>
-
+<style><!--
+        A:hover {color:#5454AD}
+        .herMusic {
+  text-align: top;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+p {
+  margin-top: -9px;
+}
+--></style>
 <body vlink="#91C8FF" text="#808080" link="#000080" bgcolor="#FFFFFF" alink="#C0C0C0">
+<div class=herMusic>
+<p align="center"><font face="arial"> <script src="https://cdn.jsdelivr.net/gh/mudcube/MIDI.js/build/MIDI.js"></div></script>
 
-<p align="center"><font face="arial"><script>// David McCoy;   mccoy@midwest.net   URL:   http://www.midwest.net/scribers/mccoy/
-// this is my random midi picker (v3.0);  If use a variant of this in your page, then
-// please email me :) Special thanks to:  Ray A. Hill;  rhill@one.net;
-// http://w3.one.net/~rhill for contributing to IE compatibility.
-
-var nummidi = 53
-day = new Date()
-seed = day.getTime()
-ran = parseInt(((seed - (parseInt(seed/1000,10) * 1000))/10)/100*nummidi + 1,10)
-
-if (ran == (1)){
-midi=("midi/midi/cid-sad-theme.mid")
-title=("FF7 - Cid's (sad) Theme")
-leng=210
-}
-
-if (ran == (2)){
-midi=("midi/midi/ff7-aerith.mid")
-title=("Aeris' (sad) Theme")
-leng=238
-}
-
-if (ran == (3)){
-midi=("midi/midi/deetaga.mid")
-title=("FFT - Data Screen")
-leng=60
-}
-
-if (ran == (4)){
-midi=("midi/midi/lemontree.mid")
-title=("Lemon Tree (Tarcy Su)")
-leng=199
-}
-
-if (ran == (5)){
-midi=("midi/ff7-chocobo-dance.mid")
-title=("FF7 - Chocobo Dance")
-leng=33
-}
-
-if (ran == (6)){
-midi=("midi/lemontree.mid")
-title=("Lemon Tree (Tarcy Su)")
-leng=199
-}
-
-if (ran == (7)){
-midi=("midi/Gift_kit.mid")
-title=("FFT - Memories")
-leng=95
-}
-
-if (ran == (8)){
-midi=("midi/ff7-costa-del-sol.mid")
-title=("FF7 - Costa del Sol")
-leng=133
-}
-
-if (ran == (9)){
-midi=("midi/ff7-datemusic.mid")
-title=("FF7 - Interrupted by Fireworks")
-leng=158
-}
-
-if (ran == (10)){
-midi=("midi/heart.mid")
-title=("Titanic - My Heart Will Go On")
-leng=300
-}
-
-if (ran == (11)){
-midi=("midi/heart.mid")
-title=("Titanic - My Heart Will Go On")
-leng=300
-}
-
-if (ran == (12)){
-midi=("midi/sikan.mid")
-title=("FFT - Comander in Training")
-leng=117
-}
-
-if (ran == (13)){
-midi=("midi/ff7-red13-sad.mid")
-title=("FF7 - Red's (sad) Theme")
-leng=188
-}
-
-if (ran == (14)){
-midi=("midi/wawildwest.mid")
-title=("Wild Arms - Wild West")
-leng=69
-}
-
-if (ran == (15)){
-midi=("midi/ff7-scary-dream.mid")
-title=("FF7 - Who Are You...?")
-leng=72
-}
-
-if (ran == (16)){
-midi=("midi/tutorial.mid")
-title=("FFT - Tutorial")
-leng=132
-}
-
-if (ran == (17)){
-midi=("midi/ff7-tifa.mid")
-title=("FF7 - Tifa's Theme")
-leng=150
-}
-
-if (ran == (18)){
-midi=("midi/tutorial.mid")
-title=("FFT - Tutorial")
-leng=132
-}
-
-if (ran == (19)){
-midi=("midi/ff7-yuffie.mid")
-title=("FF7 - Yuffie's Theme")
-leng=186
-}
-
-if (ran == (20)){
-midi=("midi/tutorial.mid")
-title=("FFT - Tutorial")
-leng=132
-}
-
-if (ran == (21)){
-midi=("midi/shell-village.mid")
-title=("FF7 - Shell Village")
-leng=216
-}
-
-if (ran == (22)){
-midi=("midi/ff2toroi.mid")
-title=("FF2(japan) - Troian Beauty")
-leng=95
-}
-
-if (ran == (23)){
-midi=("midi/Ff3celes.mid")
-title=("FF3 - Celes' Theme (Aria)")
-leng=232
-}
-
-if (ran == (24)){
-midi=("midi/ff2toroi.mid")
-title=("FF2(japan) - Troian Beauty")
-leng=95
-}
-
-if (ran == (25)){
-midi=("midi/Ff3falc2.mid")
-title=("FF3 - The Falcon")
-leng=169
-}
-
-if (ran == (26)){
-midi=("midi/Ff3main.mid")
-title=("FF3 - Main Theme (Tina)")
-leng=124
-}
-
-if (ran == (27)){
-midi=("midi/Rachel.mid")
-title=("FF3 - Forever Rachel")
-leng=81
-}
-
-if (ran == (28)){
-midi=("midi/ff5-MusicBox.mid")
-title=("FF5(japan) - Music Box")
-leng=114
-}
-
-if (ran == (29)){
-midi=("midi/ff5-UnknownLand.mid")
-title=("FF5(japan) - Unknown Lands")
-leng=178
-}
-
-if (ran == (30)){
-midi=("midi/Ffmqfnl.mid")
-title=("FFMQ - Doom Castle")
-leng=158
-}
-
-if (ran == (31)){
-midi=("midi/Ffmqmtn.mid")
-title=("FFMQ - Mount Gale")
-leng=121
-}
-
-if (ran == (32)){
-midi=("midi/jinn.mid")
-title=("FF3(japan) - Jinn the Fire")
-leng=69
-}
-
-if (ran == (33)){
-midi=("midi/voyage.mid")
-title=("FF3(japan) - Time Remains")
-leng=125
-}
-
-if (ran == (34)){
-midi=("midi/Gift_kit.mid")
-title=("FFT - Memories")
-leng=95
-}
-
-if (ran == (35)){
-midi=("midi/FF3j-CuteLittleTozas.mid")
-title=("FF3(japan) - Cute Little Tozas")
-leng=65
-}
-
-if (ran == (36)){
-midi=("midi/Gift_kit.mid")
-title=("FFT - Memories")
-leng=95
-}
-
-if (ran == (37)){
-midi=("midi/chaos.mid")
-title=("FF - Chaos' Temple")
-leng=103
-}
-
-if (ran == (38)){
-midi=("midi/ff-MatoyasCave.mid")
-title=("FF - Matoya's Cave")
-leng=100
-}
-
-if (ran == (39)){
-midi=("midi/Belthsar.mid")
-title=("CT - Belthsar's Theme")
-leng=209
-}
-
-if (ran == (40)){
-midi=("midi/c_kaze.mid")
-title=("CT - 600 AD (enhanced)")
-leng=189
-}
-
-if (ran == (41)){
-midi=("midi/tutorial.mid")
-title=("FFT - Tutorial")
-leng=132
-}
-
-if (ran == (42)){
-midi=("midi/ctend.mid")
-title=("CT - Ending Theme")
-leng=255
-}
-
-if (ran == (43)){
-midi=("midi/Ctenhasa.mid")
-title=("CT - Enhasa")
-leng=174
-}
-
-if (ran == (44)){
-midi=("midi/ctenha.mid")
-title=("CT - Enhasa (remix)")
-leng=100
-}
-
-if (ran == (45)){
-midi=("midi/ct-mountain.mid")
-title=("CT - Singing Mountain")
-leng=140
-}
-
-if (ran == (46)){
-midi=("midi/ctunderse.mid")
-title=("CT - Undersea Palace")
-leng=179
-}
-
-if (ran == (47)){
-midi=("midi/ctschala.mid")
-title=("CT - Schala's Theme")
-leng=162
-}
-
-if (ran == (48)){
-midi=("midi/flippy.mid")
-title=("CT - The End of Time")
-leng=138
-}
-
-if (ran == (49)){
-midi=("midi/ct-silentlight.mid")
-title=("CT - Silent Light")
-leng=220
-}
-
-if (ran == (50)){
-midi=("midi/cttrial.mid")
-title=("CT - The Trial")
-leng=208
-}
-
-if (ran == (51)){
-midi=("midi/Mana.mid")
-title=("SoM - Star of Darkness")
-leng=183
-}
-
-if (ran == (52)){
-midi=("midi/SD3-meridianchild.mid")
-title=("SD3 - Meridian Child")
-leng=272
-}
-
-if (ran == (53)){
-midi=("midi/kyokai.mid")
-title=("FF7 - Aeris' Theme")
-leng=297
-}
+<script>
+const tracks = [
+  { src: "audio/cid-sad-theme.mp3", title: "FF7 - Cid's (sad) Theme", len: 210 },
+  { src: "audio/ff7-aerith.mp3", title: "Aeris' (sad) Theme", len: 238 },
+  { src: "audio/deetaga.mp3", title: "FFT - Data Screen", len: 60 },
+  { src: "audio/lemontree.mp3", title: "Lemon Tree (Tarcy Su)", len: 199 },
+  { src: "audio/ff7-chocobo-dance.mp3", title: "FF7 - Chocobo Dance", len: 33 },
+  { src: "audio/lemontree.mp3", title: "Lemon Tree (Tarcy Su)", len: 199 },
+  { src: "audio/Gift_kit.mp3", title: "FFT - Memories", len: 95 },
+  { src: "audio/ff7-costa-del-sol.mp3", title: "FF7 - Costa del Sol", len: 133 },
+  { src: "audio/ff7-datemusic.mp3", title: "FF7 - Interrupted by Fireworks", len: 158 },
+  { src: "audio/heart.mp3", title: "Titanic - My Heart Will Go On", len: 300 },
+  { src: "audio/heart.mp3", title: "Titanic - My Heart Will Go On", len: 300 },
+  { src: "audio/sikan.mp3", title: "FFT - Comander in Training", len: 117 },
+  { src: "audio/ff7-red13-sad.mp3", title: "FF7 - Red's (sad) Theme", len: 188 },
+  { src: "audio/wawildwest.mp3", title: "Wild Arms - Wild West", len: 69 },
+  { src: "audio/ff7-scary-dream.mp3", title: "FF7 - Who Are You...?", len: 72 },
+  { src: "audio/tutorial.mp3", title: "FFT - Tutorial", len: 132 },
+  { src: "audio/ff7-tifa.mp3", title: "FF7 - Tifa's Theme", len: 150 },
+  { src: "audio/tutorial.mp3", title: "FFT - Tutorial", len: 132 },
+  { src: "audio/ff7-yuffie.mp3", title: "FF7 - Yuffie's Theme", len: 186 },
+  { src: "audio/tutorial.mp3", title: "FFT - Tutorial", len: 132 },
+  { src: "audio/shell-village.mp3", title: "FF7 - Shell Village", len: 216 },
+  { src: "audio/ff2toroi.mp3", title: "FF2(japan) - Troian Beauty", len: 95 },
+  { src: "audio/Ff3celes.mp3", title: "FF3 - Celes' Theme (Aria)", len: 232 },
+  { src: "audio/ff2toroi.mp3", title: "FF2(japan) - Troian Beauty", len: 95 },
+  { src: "audio/Ff3falc2.mp3", title: "FF3 - The Falcon", len: 169 },
+  { src: "audio/Ff3main.mp3", title: "FF3 - Main Theme (Tina)", len: 124 },
+  { src: "audio/Rachel.mp3", title: "FF3 - Forever Rachel", len: 81 },
+  { src: "audio/ff5-MusicBox.mp3", title: "FF5(japan) - Music Box", len: 114 },
+  { src: "audio/ff5-UnknownLand.mp3", title: "FF5(japan) - Unknown Lands", len: 178 },
+  { src: "audio/Ffmqfnl.mp3", title: "FFMQ - Doom Castle", len: 158 },
+  { src: "audio/Ffmqmtn.mp3", title: "FFMQ - Mount Gale", len: 121 },
+  { src: "audio/jinn.mp3", title: "FF3(japan) - Jinn the Fire", len: 69 },
+  { src: "audio/voyage.mp3", title: "FF3(japan) - Time Remains", len: 125 },
+  { src: "audio/Gift_kit.mp3", title: "FFT - Memories", len: 95 },
+  { src: "audio/FF3j-CuteLittleTozas.mp3", title: "FF3(japan) - Cute Little Tozas", len: 65 },
+  { src: "audio/Gift_kit.mp3", title: "FFT - Memories", len: 95 },
+  { src: "audio/chaos.mp3", title: "FF - Chaos' Temple", len: 103 },
+  { src: "audio/ff-MatoyasCave.mp3", title: "FF - Matoya's Cave", len: 100 },
+  { src: "audio/Belthsar.mp3", title: "CT - Belthsar's Theme", len: 209 },
+  { src: "audio/c_kaze.mp3", title: "CT - 600 AD (enhanced)", len: 189 },
+  { src: "audio/tutorial.mp3", title: "FFT - Tutorial", len: 132 },
+  { src: "audio/ctend.mp3", title: "CT - Ending Theme", len: 255 },
+  { src: "audio/Ctenhasa.mp3", title: "CT - Enhasa", len: 174 },
+  { src: "audio/ctenha.mp3", title: "CT - Enhasa (remix)", len: 100 },
+  { src: "audio/ct-mountain.mp3", title: "CT - Singing Mountain", len: 140 },
+  { src: "audio/ctunderse.mp3", title: "CT - Undersea Palace", len: 179 },
+  { src: "audio/ctschala.mp3", title: "CT - Schala's Theme", len: 162 },
+  { src: "audio/flippy.mp3", title: "CT - The End of Time", len: 138 },
+  { src: "audio/ct-silentlight.mp3", title: "CT - Silent Light", len: 220 },
+  { src: "audio/cttrial.mp3", title: "CT - The Trial", len: 208 },
+  { src: "audio/Mana.mp3", title: "SoM - Star of Darkness", len: 183 },
+  { src: "audio/SD3-meridianchild.mp3", title: "SD3 - Meridian Child", len: 272 },
+  { src: "audio/kyokai.mp3", title: "FF7 - Aeris' Theme", len: 297 }
+];
 
 
-document.write('<META HTTP-EQUIV=REFRESH CONTENT="' + leng + '; URL=newfream.html">')
-document.write('<FONT SIZE=-2>' + title + '</FONT>   ')
-document.write('<EMBED SRC="'+ midi +'" AUTOSTART="true" LOOP="true" volume=45 width=51 height=15 align=center controls=smallconsole>')</script><meta http-equiv="REFRESH" content="210; URL=newfream.htm"><font size="-2">FF7 - Cid's (sad) Theme</font>   <embed src="newfream_data/cid-sad-theme.mid" autostart="true" loop="true" volume="45" controls="smallconsole" width="51" height="15" align="middle"></font></p>
+const track = tracks[Math.floor(Math.random() * tracks.length)];
+
+document.write(`
+  <meta http-equiv="refresh" content="${track.len}; URL=newfream.html">
+  <div style="font-size: small; margin-bottom: 8px;">${track.title}</div>
+  <audio src="${track.src}" autoplay loop controls></audio>
+`);
+</script>
+</p>
 
 
 
